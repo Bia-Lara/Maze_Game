@@ -26,7 +26,7 @@ const char* getRandomEnding() {
     const char* endings[] = {
         "Voce encontrou uma saida secreta e conseguiu se salvar! (Fim)",
         "Voce encontrou uma porta e conseguiu sair do labirinto! (Fim)",
-        "Voce encontrou um poço dos desejos e fez um pedido de sair do labirinto! (Fim)",
+        "Voce encontrou um poco dos desejos e fez um pedido de sair do labirinto! (Fim)",
         "Voce caiu em uma armadilha perigosa e morreu! (Fim)",
         "Voce encontrou uma armadilha de areia movediça e morreu! (Fim)",
        "Voce foi atingido por flechas vindas do teto e morreu! (Fim)",
@@ -128,12 +128,23 @@ int init_maze(Node *maze_node) {
 int main() {
     srand(time(NULL));
     int toContinue = 1;
+    int qntLayers=0;
 
     while(toContinue) {
-        Node *maze = createRoom(1, 3); 
+        printf("\nDigite a quantidade de niveis no labirinto (numero positivo): ");
+
+        
+        while (scanf("%d", &qntLayers) != 1 || qntLayers <= 0) {
+            printf("Entrada invalida! Por favor, digite um numero inteiro positivo: ");
+        }
+        
+        Node *maze = createRoom(1, qntLayers); 
         init_maze(maze);
         printf("\n\nDo you want to play again:\n1.yes \nPress any NUMBER to stop this shit\n");
-        scanf("%d", &toContinue);
+
+        if (scanf("%d", &toContinue) != 1) {
+            toContinue = 0;
+        }
 
         if(toContinue != 1) { 
             freeMaze(maze);
