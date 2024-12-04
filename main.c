@@ -127,11 +127,21 @@ int init_maze(Node *maze_node) {
 
 int main() {
     srand(time(NULL));
+    int toContinue = 1;
 
-    Node *maze = createRoom(1, 3); 
-    init_maze(maze);
+    while(toContinue) {
+        Node *maze = createRoom(1, 3); 
+        init_maze(maze);
+        printf("\n\nDo you want to play again:\n1.yes \nPress any NUMBER to stop this shit\n");
+        scanf("%d", &toContinue);
 
-    freeMaze(maze);
+        if(toContinue != 1) { 
+            freeMaze(maze);
+            break;
+        }
+
+        printf("\n\n");
+    }
 
     return 0;
 }
