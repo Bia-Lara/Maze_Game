@@ -40,8 +40,10 @@ const char* getRandomEnding() {
         "Voce caiu no Rio de Janeiro e morreu em um tiroteio (FIM)",
         "Voce caiu em São Paulo e acabou nas drogas (FIM)",
         "Voce acordou e viu que tudo não se passava de um sonho (FIM)",
-        "Voce escapou",
-        "Você caiu em Setealém"
+        "Voce escapou (FIM)",
+        "Você caiu em Setealém (FIM)",
+        "você tropeçou em um anão, bateu a cabeça e morreu (FIM)",
+        "Voce chegou ao fim e conseguiu sair da matrix (FIM)"
     };
     int index = rand() % 13; 
     return endings[index];
