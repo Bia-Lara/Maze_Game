@@ -29,15 +29,19 @@ const char* getRandomEnding() {
         "Voce encontrou um poco dos desejos e fez um pedido de sair do labirinto! (Fim)",
         "Voce caiu em uma armadilha perigosa e morreu! (Fim)",
         "Voce encontrou uma armadilha de areia movediça e morreu! (Fim)",
-       "Voce foi atingido por flechas vindas do teto e morreu! (Fim)",
+        "Voce foi atingido por flechas vindas do teto e morreu! (Fim)",
         "Voce foi atacado por um monstro e morreu! (Fim)",
         "Voce encontrou um portal para outro labirinto! (Fim)",
         "Voce caiu em um poco de lava e morreu! (Fim)",
         "Voce foi capturado por guardioes do labirinto que te comeram vivo! (Fim)",
         "Voce tropecou em um bau vazio... azar! (Fim)",
         "Voce foi teletransportado para o inicio do labirinto!",
-        "Voce caiu em um buraco sem fim! (Fim)"
-        
+        "Voce caiu em um buraco sem fim! (Fim)",
+        "Voce caiu no Rio de Janeiro e morreu em um tiroteio (FIM)",
+        "Voce caiu em São Paulo e acabou nas drogas (FIM)",
+        "Voce acordou e viu que tudo não se passava de um sonho (FIM)",
+        "Voce escapou",
+        "Você caiu em Setealém"
     };
     int index = rand() % 13; 
     return endings[index];
