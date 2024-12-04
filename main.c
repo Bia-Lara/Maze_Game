@@ -97,14 +97,39 @@ void printMaze(Node* node, int layer) {
     }
 }
 
+int init_maze(Node *maze_node) {
+    int option;
+
+    printf("%s\n", maze_node->description);
+
+    if (maze_node->left == NULL && maze_node->center == NULL && maze_node->right == NULL) {
+        printf("Fim do jogo!\n");
+        return 0;
+    }
+
+    do {
+        printf("Escolha uma opcao (1, 2 ou 3): ");
+        scanf("%d", &option);
+
+        switch (option) {
+            case 1:
+                return init_maze(maze_node->left); 
+            case 2:
+                return init_maze(maze_node->center);
+            case 3:
+                return init_maze(maze_node->right);  
+            default:
+                printf("Opcao invalida! Tente novamente.\n");
+        }
+    } while (1); 
+}
+
+
 int main() {
     srand(time(NULL));
 
-    // Constrói o labirinto de acordo com o número de camadas passadas no parâmetro;
     Node *maze = createRoom(1, 3); 
-
-    printf("Estrutura do Labirinto:\n");
-    printMaze(maze, 1);
+    init_maze(maze);
 
     freeMaze(maze);
 
