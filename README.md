@@ -1,4 +1,4 @@
-# Labirinto Aventureiro 🏰
+# Maze Brazil Life 🏰
 
 Este projeto é um jogo interativo de labirinto em C, onde o jogador navega por diferentes camadas de um labirinto, tomando decisões em cada sala. O objetivo do jogo é explorar o labirinto até encontrar um "fim", que pode ser uma saída ou um resultado inesperado. 🌟
 
