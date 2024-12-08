@@ -1,6 +1,6 @@
 # Maze Brazil Life 🏰
 
-Este projeto é um jogo interativo de labirinto em C, onde o jogador navega por diferentes camadas de um labirinto, tomando decisões em cada sala. O objetivo do jogo é explorar o labirinto até encontrar um "fim", que pode ser uma saída ou um resultado inesperado. 🌟
+Este projeto é um jogo interativo de labirinto em C, onde o jogador navega por diferentes camadas de um labirinto, tomando decisões em cada sala. O objetivo do jogo é explorar o labirinto até encontrar um "fim". 🌟
 
 ---
 
@@ -21,7 +21,7 @@ Este projeto é um jogo interativo de labirinto em C, onde o jogador navega por 
 
 ## Descrição 🧩
 
-O jogo consiste em uma árvore binária onde cada nó representa uma sala do labirinto. Cada sala tem três caminhos possíveis: Esquerda, Centro e Direita. O jogador escolhe um caminho e continua avançando até chegar a um fim (ou uma situação de morte). O labirinto é gerado aleatoriamente, e o jogo pode ser jogado novamente após cada tentativa. 🔄
+O jogo consiste em uma árvore binária onde cada nó representa uma sala do labirinto. Cada sala tem três caminhos possíveis: Esquerda, Centro e Direita. O jogador escolhe um caminho e continua avançando até chegar a um fim. O labirinto é gerado aleatoriamente, e o jogo pode ser jogado novamente após cada tentativa. 🔄
 
 ## Funcionalidades ✨
 
@@ -34,7 +34,7 @@ O jogo consiste em uma árvore binária onde cada nó representa uma sala do lab
 
 1. O jogo solicita a quantidade de camadas (níveis) do labirinto. Quanto maior o número, mais complexo o labirinto será. ⬆️
 2. A cada sala, o jogador deve escolher entre três caminhos: Esquerda, Centro ou Direita. ➡️
-3. O jogo continuará até que o jogador chegue a um "fim", que pode ser uma vitória ou uma morte, dependendo do caminho escolhido. 💀
+3. O jogo continuará até que o jogador chegue a um "fim".
 4. O jogador pode optar por jogar novamente com um novo labirinto. 🎉
 
 ## Compilação 🛠️
