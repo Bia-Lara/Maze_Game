@@ -96,29 +96,6 @@ void freeMaze(Node* node) {
     }
 }
 
-// Função para depuração (remover quando estiver tudo pronto)
-void printMaze(Node* node, int layer) {
-    if (node == NULL) {
-        return; 
-    }
-    
-    // Exibe a descrição da sala, com indentação baseada na camada
-    printf("%*s%s\n", layer * 2, "", node->description);
-
-  
-    if (node->left != NULL) {
-        printMaze(node->left, layer + 1);    
-    }
-
-     if (node->center != NULL) {
-        printMaze(node->center, layer + 1);    
-    }
-   
-    if (node->right != NULL) {
-        printMaze(node->right, layer + 1);   
-    }
-}
-
 int init_maze(Node *maze_node) {
     int option;
 
