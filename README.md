@@ -66,7 +66,7 @@ Voce esta na camada 2 do labirinto. Escolha: (1) Esquerda, (2) Centro, (3) Direi
 Escolha uma opcao (1, 2 ou 3): 2
 Voce esta na camada 3 do labirinto. Escolha: (1) Esquerda, (2) Centro, (3) Direita.
 Escolha uma opcao (1, 2 ou 3): 3
-Voce foi atingido por flechas vindas do teto e morreu! (Fim)
+Voce encontrou uma saida que leva direto para uma fila do SUS. Agora e so esperar! (Fim)
 ```
 ## Contribuições 🤝
 
