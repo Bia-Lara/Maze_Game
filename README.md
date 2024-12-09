@@ -53,7 +53,6 @@ gcc -o main.c
 - **`getRandomEnding`**: Função que escolhe aleatoriamente um final para o labirinto, podendo ser uma saída ou uma morte. 🎲
 - **`init_maze`**: Função principal que inicia o jogo. Ela imprime a descrição da sala atual e aguarda a escolha do jogador. 🚪
 - **`freeMaze`**: Função que libera a memória utilizada pelo labirinto ao final do jogo. 💾
-- **`printMaze`**: Função de depuração que imprime o labirinto no terminal (não utilizada no jogo final, mas útil para ver a estrutura interna). 🖥️
 
 
 ## Exemplo de Execução 🖱️
