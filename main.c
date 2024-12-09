@@ -61,7 +61,7 @@ const char* getRandomEnding() {
         "Voce encontrou a saida, mas estava no meio de um 'rolezinho' e foi abordado pela policia. (Fim)"
 
     };
-    int index = rand() % 13; 
+    int index = rand() % 35; 
     return endings[index];
 }
 
